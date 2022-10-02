@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.info {
+  color: blue;
+  font-size: 25px;
+}
+
+.info2{
+  color: blue;
+  font-size: 20px;
+}
+
+.cons {
+  color: red;
+  font-size: 20px;
+}
+
+.link a {
+  color: orange;
+  font-size: 15px;
+}
