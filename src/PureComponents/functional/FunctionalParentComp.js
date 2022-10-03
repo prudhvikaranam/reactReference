@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function FunctionalParentComp() {
   return (
@@ -6,4 +6,4 @@ function FunctionalParentComp() {
   )
 }
 
-export default FunctionalParentComp
+export default FunctionalParentComp;

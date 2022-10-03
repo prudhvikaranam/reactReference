@@ -15,6 +15,7 @@ class FwParentRef extends Component {
         return (
             <div>
                 <h1>Forwarding Ref.....</h1>
+                <h2>Helps us to directly access the DOM nodes in REACT</h2>
                 <p>This is a Parent forward red inputInput</p>
                 <button onClick={this.fwdRefMethod.bind(this)}>Pass ref to func comp</button>
                 <hr />

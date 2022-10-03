@@ -7,11 +7,15 @@ import ParentFuncComp from './state/ParentFuncComp';
 import ParentClassComp from './state/ParentClassComp';
 import ParentClassLC from './lifecycles/parentClassLC';
 import ClassParentComponent from './PureComponents/Class/ClassParentComponent';
+import FunctionalParentComp from './PureComponents/functional/FunctionalParentComp';
+import ClassParentComp from './PureComponents/functional/ClassParentComp';
 
 function App() {
   return (
     // Pure Components
-    <ClassParentComponent />
+    // <ClassParentComponent />
+    <ClassParentComp />
+    // <FunctionalParentComp />
 
 
     // Life Cycle Methods

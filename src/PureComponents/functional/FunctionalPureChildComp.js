@@ -1,9 +1,15 @@
 import React from 'react'
 
-function FunctionalPureChildComp() {
+function FunctionalPureChildComp(props) {
+  console.log(props.name);
   return (
-    <div>FunctionalPureChildComp</div>
+    <div>
+      <h3>
+        FunctionalPureChildComp
+      </h3><br />
+      {props.name}
+    </div>
   )
 }
 
-export default FunctionalPureChildComp
+export default React.memo(FunctionalPureChildComp);
