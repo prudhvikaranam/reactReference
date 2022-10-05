@@ -9,17 +9,26 @@ import ParentClassLC from './lifecycles/parentClassLC';
 import ClassParentComponent from './PureComponents/Class/ClassParentComponent';
 import FunctionalParentComp from './PureComponents/functional/FunctionalParentComp';
 import ClassParentComp from './PureComponents/functional/ClassParentComp';
-
+import ParentPortal from './Portals/ParentPortal';
+import ParentError from './lifecycles/Errors/ParentError';
 function App() {
   return (
+
+
+
+    // Portals
+    // <ParentPortal />
+
+
     // Pure Components
     // <ClassParentComponent />
-    <ClassParentComp />
+    // <ClassParentComp />
     // <FunctionalParentComp />
 
 
     // Life Cycle Methods
     // <ParentClassLC></ParentClassLC>
+    <ParentError></ParentError>
 
     //State
     // <ParentClassComp></ParentClassComp>
