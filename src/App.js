@@ -11,10 +11,11 @@ import FunctionalParentComp from './PureComponents/functional/FunctionalParentCo
 import ClassParentComp from './PureComponents/functional/ClassParentComp';
 import ParentPortal from './Portals/ParentPortal';
 import ParentError from './lifecycles/Errors/ParentError';
+import ParentClassHoc from './HOC/ParentClassHoc';
 function App() {
   return (
-
-
+    // HOC
+    // <ParentClassHoc></ParentClassHoc>
 
     // Portals
     // <ParentPortal />

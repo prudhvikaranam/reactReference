@@ -12,9 +12,13 @@ export class ErrorBoundary extends Component {
             hasError: true
         }
     }
+    componentDidCatch(error,info){
+        console.log('Error --->',error);
+        console.log('Info  --->',info);
+    }
     render() {
         if (this.state.hasError) {
-            return 'Somethign went Wrong, Looks like he is not an hero'
+            return <h1>Something went Wrong, Looks like he is not an hero</h1>;
         } else {
             return this.props.children 
         }

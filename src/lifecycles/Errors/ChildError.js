@@ -7,7 +7,7 @@ export class ChildError extends Component {
 
   render() {
     if (this.props.heroName === 'Joker') {
-      throw new Error();
+      throw new Error(); //Simulating the Error
     } else {
       return (
         <div>
