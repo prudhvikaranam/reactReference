@@ -11,11 +11,12 @@ import FunctionalParentComp from './PureComponents/functional/FunctionalParentCo
 import ClassParentComp from './PureComponents/functional/ClassParentComp';
 import ParentPortal from './Portals/ParentPortal';
 import ParentError from './lifecycles/Errors/ParentError';
-import ParentClassHoc from './HOC/ParentClassHoc';
+import ParentClassCompHOC from './HOC/ParentClassCompHOC';
+
 function App() {
   return (
     // HOC
-    // <ParentClassHoc></ParentClassHoc>
+    <ParentClassCompHOC></ParentClassCompHOC>
 
     // Portals
     // <ParentPortal />
@@ -29,7 +30,7 @@ function App() {
 
     // Life Cycle Methods
     // <ParentClassLC></ParentClassLC>
-    <ParentError></ParentError>
+    // <ParentError></ParentError>
 
     //State
     // <ParentClassComp></ParentClassComp>
