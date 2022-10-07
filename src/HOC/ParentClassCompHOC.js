@@ -32,4 +32,4 @@ export class ParentClassCompHOC extends Component {
   }
 }
 
-export default EnhancedReferSourceCompo(ParentClassCompHOC,'HOC : Higher Order functions are helpful for code','https://www.geeksforgeeks.org/react-js-higher-order-components/');
+export default EnhancedReferSourceCompo(ParentClassCompHOC,'HOC : Higher Order functions are helpful for code reuse-ability','https://www.geeksforgeeks.org/react-js-higher-order-components/');

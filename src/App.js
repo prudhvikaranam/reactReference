@@ -12,11 +12,20 @@ import ClassParentComp from './PureComponents/functional/ClassParentComp';
 import ParentPortal from './Portals/ParentPortal';
 import ParentError from './lifecycles/Errors/ParentError';
 import ParentClassCompHOC from './HOC/ParentClassCompHOC';
+import ParentRenderProp from './renderProps/ParentRenderProp';
+import ParentContextComponent from './Context/ClassComponents/ParentContextComponent';
 
 function App() {
   return (
+    // Context
+    <ParentContextComponent></ParentContextComponent>
+    
+    // Render Props
+    // <ParentRenderProp></ParentRenderProp>
+
+
     // HOC
-    <ParentClassCompHOC></ParentClassCompHOC>
+    // <ParentClassCompHOC></ParentClassCompHOC>
 
     // Portals
     // <ParentPortal />
