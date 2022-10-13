@@ -14,12 +14,20 @@ import ParentError from './lifecycles/Errors/ParentError';
 import ParentClassCompHOC from './HOC/ParentClassCompHOC';
 import ParentRenderProp from './renderProps/ParentRenderProp';
 import ParentContextComponent from './Context/ClassComponents/ParentContextComponent';
+import ParentContextFucntional from './HOOKS/Context/FunctionalComponents/ParentContextFucntional';
+import ParentStateFunctional from './HOOKS/State/ParentStateFunctional';
+import ParentuseEffects from './HOOKS/useEffect/ParentuseEffect';
 
 function App() {
   return (
+    //Hooks
+    <ParentuseEffects></ParentuseEffects>
+    // <ParentStateFunctional></ParentStateFunctional>
+    // <ParentContextFucntional></ParentContextFucntional>
+
     // Context
-    <ParentContextComponent></ParentContextComponent>
-    
+    // <ParentContextComponent></ParentContextComponent>
+
     // Render Props
     // <ParentRenderProp></ParentRenderProp>
 
