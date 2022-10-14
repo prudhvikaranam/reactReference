@@ -22,7 +22,7 @@ export class ParentClassCompHOC extends Component {
           <HoverIncrementClass></HoverIncrementClass>
         </div><hr />
         <div>
-          Components with HOC functionality...In this, we have create a new file which has the common logic and this has been used in the other two components...
+          Components with HOC functionality...In this, we  to create a new file which has the common logic and this has been used in the other two components...
           <p className='info2'>If we are taking the help of the HOC component,Even the props which we pass directly to the component will not be available, those will be available in the enhanced component file where we can destructure and pass them to the component....</p>
           <ButtonIncrementHOC name= "IRONMAN"></ButtonIncrementHOC>
           <HoverIncrementHOC></HoverIncrementHOC>
