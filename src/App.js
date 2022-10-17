@@ -21,9 +21,9 @@ import ParentuseEffects from './HOOKS/useEffect/ParentuseEffect';
 function App() {
   return (
     //Hooks
-    <ParentuseEffects></ParentuseEffects>
+    <ParentContextFucntional></ParentContextFucntional>
+    // <ParentuseEffects></ParentuseEffects>
     // <ParentStateFunctional></ParentStateFunctional>
-    // <ParentContextFucntional></ParentContextFucntional>
 
     // Context
     // <ParentContextComponent></ParentContextComponent>

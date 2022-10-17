@@ -7,7 +7,7 @@ const codeSnippet = ((OriginalComponent, code) => {
         }
 
         componentDidMount() {
-            document.getElementById('codeSnippetId').innerHTML = code
+            document.getElementById('codeSnippetId').innerText = code;
         }
         render() {
             return <OriginalComponent someProps= "This can be used in the components as PROPS"></OriginalComponent>

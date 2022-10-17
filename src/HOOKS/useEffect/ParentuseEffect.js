@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import codeSnippet from '../../HOC/codeSnippet/codeSnippetHOC';
 import ChilduseEffect from './ChilduseEffect'
-let effectCodeSnippet = `<b>
-                            useEffect(function,[dependencies])<br/>
-                            useEffect(() => {<br />
-                                //Some logic which needs to run (fetching data, updating DOM, timers, etc…)<br/>
+let effectCodeSnippet = `
+                            useEffect(function,[dependencies])
+                            useEffect(() => {
+                                //Some logic which needs to run (fetching data, updating DOM, timers, etc…)
                             }, [dependencies]optional)
-                        </br>`
+                        `
 let i = 0;
 const ParentuseEffect = (props) => {
     const [count, setCount] = useState(0);
@@ -38,7 +38,7 @@ const ParentuseEffect = (props) => {
                 <div>State Count <b>{count}</b></div>
                 <button onClick={changeCount}>Change state Count</button>
                 <h2>Below example show how to perform the cleanup in the useEffect...</h2>
-                <button onClick={() => {componentLoaded(!childComponent)}}>Toggle Child Component</button>
+                <button onClick={() => { componentLoaded(!childComponent) }}>Toggle Child Component</button>
                 <br />
                 <hr />
                 {childComponent && <ChilduseEffect />}
@@ -52,8 +52,9 @@ const ParentuseEffect = (props) => {
                     Call back function is triggered when ever the component is rendered and it also gets triggered whenever there are changes in the dependencies.<br />
 
                 </h2>
+                <b>
                 <div id='codeSnippetId'>
-                </div><br />
+                </div></b><br />
                 Dependencies might be useful for <b>conditional</b> trigerrings, when there is a change in the dependencies then only the effect will run else (if there is no code change) then effect method will not be triggered.
                 <h1 className='info'>When an <b>empty array is passed as second argument(dependency) [], then useEffect Method is triggered only once</b> i.e., at the time of component creation and not every time when there is a DOM updation..</h1>
                 <h1 className='info'>If there is a running code in useEffect method it won't be stopped even after <b>unMounting the component, to stop the running code after unMounting the component we need to return a function (mostly named function) from the useEffect method.</b></h1>
