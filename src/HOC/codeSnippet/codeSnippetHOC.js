@@ -10,7 +10,7 @@ const codeSnippet = ((OriginalComponent, code) => {
             document.getElementById('codeSnippetId').innerHTML = code
         }
         render() {
-            return <OriginalComponent></OriginalComponent>
+            return <OriginalComponent someProps= "This can be used in the components as PROPS"></OriginalComponent>
         }
     }
     return NewComponent

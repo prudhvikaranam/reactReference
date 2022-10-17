@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ChildStateFunctional from './ChildStateFunctional'
 import image from './stateSummary.png';
 function ParentStateFunctional() {
-
+    console.log('ParentStateFunctional called');
     let imageStyle = {
         width: '50%'
     }
@@ -70,6 +70,9 @@ function ParentStateFunctional() {
 
             Array = {stateArray}<br /><br />
 
+
+            <h1>Guide</h1>
+            <h1 className='info'>When there is a change in the state then the entire function gets called</h1>
             <img src={image} style={imageStyle} />
             <hr />
             <ChildStateFunctional />

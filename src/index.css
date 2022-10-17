@@ -33,3 +33,8 @@ code {
   color: orange;
   font-size: 15px;
 }
+
+.success{
+  font-size: 25px;
+  color: rgb(235 145 32);
+}
