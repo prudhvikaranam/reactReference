@@ -10,7 +10,14 @@ const reducer = (state, action) => {
     \u00a0switch (action) {
         \u00a0\u00a0 case 'add':
         \u00a0\u00a0\u00a0\u00a0 return state + 1; 
+
+
+
         \u00a0\u00a0\u00a0\u00a0 // *************What ever we are returning here will be returned into the count variable declared below, We are not returning into the actual initialCount variable, At the time of initialization (first time load) since we are passing the intialCount into the useReducer function we are able to access and display the count. And the state which we are using in this reducer function will hold the updated value but the initialCount will not be updated actually*************//
+
+
+
+
         \u00a0\u00a0 case 'substract':
         \u00a0\u00a0\u00a0\u00a0 return state - 1;
         \u00a0\u00a0 case 'reset':
@@ -37,11 +44,9 @@ return (
 function ParentReducer(props) {
     return (
         <div>
-            <ChildReducerComplex />
-
-
-            <hr />
             ParentReducer
+            <br />Reducers helps us in state mangement
+
 
             <h2 className='info2'>
                 <span className='label'>First Step </span>: Create a Reducer using <b>useReducer(reduceFn,initialState)</b>;<br />
@@ -56,9 +61,13 @@ function ParentReducer(props) {
             </h2>
             <hr />
             <ChildReducer /><hr />
+            <ChildReducerComplex />
+
+
+            <hr />
 
         </div>
     )
 }
 
-export default codeSnippet(ParentReducer, useReducerBasicCode,'codeSnippetIduseReducerBasicCode');
+export default codeSnippet(ParentReducer, useReducerBasicCode, 'codeSnippetIduseReducerBasicCode');
