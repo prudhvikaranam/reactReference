@@ -18,7 +18,7 @@ code {
   font-weight: 100;
 }
 
-.info2{
+.info2 {
   color: blue;
   font-size: 20px;
   font-weight: 100;
@@ -34,7 +34,12 @@ code {
   font-size: 15px;
 }
 
-.success{
+.success {
   font-size: 25px;
   color: rgb(235 145 32);
+}
+
+.label {
+  color: #ff8100;
+  font-weight: bold;
 }

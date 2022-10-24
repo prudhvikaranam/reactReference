@@ -17,11 +17,13 @@ import ParentContextComponent from './Context/ClassComponents/ParentContextCompo
 import ParentContextFucntional from './HOOKS/Context/FunctionalComponents/ParentContextFucntional';
 import ParentStateFunctional from './HOOKS/State/ParentStateFunctional';
 import ParentuseEffects from './HOOKS/useEffect/ParentuseEffect';
+import ParentReducer from './HOOKS/Reducer/ParentReducer';
 
 function App() {
   return (
     //Hooks
-    <ParentContextFucntional></ParentContextFucntional>
+    <ParentReducer></ParentReducer>
+    // <ParentContextFucntional></ParentContextFucntional>
     // <ParentuseEffects></ParentuseEffects>
     // <ParentStateFunctional></ParentStateFunctional>
 

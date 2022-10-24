@@ -1,0 +1,57 @@
+import React from 'react'
+import ChildReducer from './ChildReducer'
+import codeSnippet from './../../HOC/codeSnippet/codeSnippetHOC';
+
+const useReducerBasicCode = `
+const intialCount = 0;
+
+const reducer = (state, action) => {
+    \u00a0switch (action) {
+        \u00a0\u00a0 case 'add':
+        \u00a0\u00a0\u00a0\u00a0 return state + 1;
+        \u00a0\u00a0 case 'substract':
+        \u00a0\u00a0\u00a0\u00a0 return state - 1;
+        \u00a0\u00a0 case 'reset':
+        \u00a0\u00a0\u00a0\u00a0 return intialCount;
+        \u00a0\u00a0 default:
+        \u00a0\u00a0\u00a0\u00a0 return state;
+    \u00a0}
+}
+
+const [count, dispatch] = useReducer(reducer, intialCount);
+
+return (
+    <div>
+        ChildReducer
+        <h1>This component has a basics of the Reducer concepts.</h1>
+        Count : {count}
+        <button onClick={() => dispatch('add')}>Add Count</button>
+        <button onClick={() => dispatch('substract')}>Reduce Count</button >
+        <button onClick={() => dispatch('reset')}>Reset Count</button>
+    </div>
+);`
+
+
+function ParentReducer() {
+    return (
+        <div>
+            ParentReducer
+
+            <h2 className='info2'>
+                <span className='label'>First Step </span>: Create a Reducer using <b>useReducer(reduceFn,initialState)</b>;<br />
+                <span className='label'>Second Step </span> : Create a reduceFn function which takes two parameters <b>reduceFn(state,action)</b>;<br />
+                <span className='label'>Third Step </span> : useReducer function array with two elements where first one will be the returned value which we modified (state) in reduceFn function and second one is the dispatch which is the action which we want to perform.
+                <b>const [someValue,dispatch] = useReducer(reduceFn,initialState)</b>
+                Below is small and basic example on how to implement useReducer;
+                <hr />
+                <b>
+                    <div id='codeSnippetId'></div>
+                </b>
+            </h2>
+            <hr />
+            <ChildReducer />
+        </div>
+    )
+}
+
+export default codeSnippet(ParentReducer, useReducerBasicCode);
