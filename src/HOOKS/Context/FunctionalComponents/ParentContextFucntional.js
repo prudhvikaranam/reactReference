@@ -76,10 +76,10 @@ function ParentContextFucntional() {
       <p className='info2'>React Context is a way to manage state globally. It can be used together with the useState Hook to share state between deeply nested components more easily than with useState alone.</p>
       <p className='info2'>In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.</p>
       <h1>Implementation</h1>
-      <b><div id='codeSnippetId'></div></b>
+      <b><div id='codeSnippetIdParentContext'></div></b>
 
     </div>
   )
 }
 
-export default codeSnippet(ParentContextFucntional, contextCodeSnippet)
+export default codeSnippet(ParentContextFucntional, contextCodeSnippet,'codeSnippetIdParentContext')

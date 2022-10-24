@@ -53,7 +53,7 @@ const ParentuseEffect = (props) => {
 
                 </h2>
                 <b>
-                <div id='codeSnippetId'>
+                <div id='parentUseEffect'>
                 </div></b><br />
                 Dependencies might be useful for <b>conditional</b> trigerrings, when there is a change in the dependencies then only the effect will run else (if there is no code change) then effect method will not be triggered.
                 <h1 className='info'>When an <b>empty array is passed as second argument(dependency) [], then useEffect Method is triggered only once</b> i.e., at the time of component creation and not every time when there is a DOM updation..</h1>
@@ -66,4 +66,4 @@ const ParentuseEffect = (props) => {
 }
 
 
-export default codeSnippet(ParentuseEffect, effectCodeSnippet);
+export default codeSnippet(ParentuseEffect, effectCodeSnippet,'parentUseEffect');
