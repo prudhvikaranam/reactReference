@@ -44,15 +44,43 @@ return (
 function ParentReducer(props) {
     return (
         <div>
-            ParentReducer
-            <br />Reducers helps us in state mangement
-
+            ParentReducer (Mostly for Local State Mangement)
+            <br />Reducers helps us in state mangement<br/>
+            <b className='info2'>Mostly useState and useReducer does the same work i.e., State Management.<br /><br />
+            Use Case Recommendations.</b>
+            <br /><br />
+            <table>
+                <tr>
+                    <th>useState </th>
+                    <th>useReducer</th>
+                </tr>
+                <tr>
+                    <td>Primitive Types (String,number,booleans)</td>
+                    <td>Objects, Arrays</td>
+                </tr>
+                <tr>
+                    <td>When less number of State Transistions<br/>Mostly 1 to 3 setState() 's</td>
+                    <td>When more than 2 or 3 setState() 's</td>
+                </tr>
+                <tr>
+                    <td>When there are NO related Transistions</td>
+                    <td>When Related Transistions</td>
+                </tr>
+                <tr>
+                    <td>No Business Logic</td>
+                    <td>Complex Business Logic</td>
+                </tr>
+                <tr>
+                    <td>Local State</td>
+                    <td>Global State</td>
+                </tr>
+            </table>
 
             <h2 className='info2'>
                 <span className='label'>First Step </span>: Create a Reducer using <b>useReducer(reduceFn,initialState)</b>;<br />
                 <span className='label'>Second Step </span> : Create a reduceFn function which takes two parameters <b>reduceFn(state,action)</b>;<br />
                 <span className='label'>Third Step </span> : useReducer function array with two elements where first one will be the returned value which we modified (state) in reduceFn function and second one is the dispatch which is the action which we want to perform.
-                <b>const [someValue,dispatch] = useReducer(reduceFn,initialState)</b>
+                <b>const [someValue,dispatch] = useReducer(reduceFn,initialState)</b><br />
                 Below is small and basic example on how to implement useReducer;
                 <hr />
                 <b>
