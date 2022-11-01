@@ -36,12 +36,6 @@ function UseCallBackParent() {
   return (
     <div>UseCallBackParent
 
-      {/* <h2 className='info'>The main use of <b>useCallback</b> hook is to prevent a component
-        from triggering unless its own props have changed.<br />
-        The useCallback Hook only runs when one of its dependencies update.<br />
-        By this if any function has a logic which takes time, we can stop executing that unless that dependency is changed. This function runs at the component initialization and only when there is a dependency changed.<br />
-        In the below code useCallback is applied on ChildA component hence the code inside it is not executed until there is a change in the dependency, Whereas the ChildB and ChildC component runs
-      </h2> */}
       Implementation:
       useCallback hook takes two parameters, first is the function and second is the array with dependencies.
       <div id='useCallBackCodeSnippetId'></div>
@@ -59,18 +53,6 @@ function UseCallBackParent() {
 
       <hr />
 
-      {/* <UseCallbackChildB countB={countC} /><br /> */}
-      {/* <CallBackIncrementButton incrementCount={incrementCountC}>Increment C</CallBackIncrementButton> */}
-
-
-      {/******************** IGNORE  ********************/}
-      {/* <hr />
-      <UseCallbackChildA countA={countA} incrementA={incrementCountA} />
-      <hr />
-      <UseCallbackChildB countB={countB} incrementB={incrementCountB} />
-      <hr />
-      <UseCallbackChildC countC={countC} incrementC={incrementCountC} />
-      <hr /> */}
     </div>
   )
 }
