@@ -20,12 +20,12 @@ function UseCallBackParent() {
 
 
   const incrementCountA = useCallback(() => {
-    // console.log('In Parent component imcrementA method called');
+    console.log('In Parent component imcrementA method called');
     incrementA(countA + 1)
   }, [countA])
 
   const incrementCountB = () => {
-    // console.log('In Parent component imcrementB method called');
+    console.log('In Parent component imcrementB method called');
     incrementB(countB + 2)
   }
 
@@ -36,6 +36,9 @@ function UseCallBackParent() {
   return (
     <div>UseCallBackParent
 
+      <h1 className='info'>
+        All increment functions are created each time the parent component re-renders and when delaing with functions we always have to consider reference equality even though two functions have the exact same behaviour it does not mean there are equal to each other, so the function before the re-render is different to the function after the re-render and since the function is a prop <b>React.memo</b> sees that the prop has changed and will not prevent the re-render
+      </h1>
       Implementation:
       useCallback hook takes two parameters, first is the function and second is the array with dependencies.
       <div id='useCallBackCodeSnippetId'></div>
