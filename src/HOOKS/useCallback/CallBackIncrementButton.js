@@ -1,7 +1,7 @@
 import React from 'react'
 
 function CallBackIncrementButton(props) {
-    console.log('Rendering Button component');
+  console.log(`Rendering when state changed in ${props.forComponent}`);
   return (
     <div>CallBackIncrementButton
         <button onClick={props.incrementCount}>{props.children}</button>
