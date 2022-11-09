@@ -21,11 +21,13 @@ import ParentReducer from './HOOKS/Reducer/ParentReducer';
 import UseCallBackParent from './HOOKS/useCallback/UseCallBackParent';
 import UseMemoParent from './HOOKS/useMemo/UseMemoParent';
 import UseRefParent from './HOOKS/useRef/UseRefParent';
+import CustomParentHook from './HOOKS/customHooks/CustomParentHook';
 
 function App() {
   return (
     //Hooks
-    <UseRefParent></UseRefParent>
+    <CustomParentHook></CustomParentHook>
+    // <UseRefParent></UseRefParent>
     // <UseMemoParent></UseMemoParent>
     // <UseCallBackParent></UseCallBackParent>
     // <ParentReducer></ParentReducer>
