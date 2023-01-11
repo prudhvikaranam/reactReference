@@ -22,11 +22,18 @@ import UseCallBackParent from './HOOKS/useCallback/UseCallBackParent';
 import UseMemoParent from './HOOKS/useMemo/UseMemoParent';
 import UseRefParent from './HOOKS/useRef/UseRefParent';
 import CustomParentHook from './HOOKS/customHooks/CustomParentHook';
+import UseState from './reactRendering/UseState/UseState';
+import UseReducer from './reactRendering/UseReducer/UseReducer';
 
 function App() {
   return (
+    // React Render
+    <UseReducer></UseReducer>
+    // <UseState></UseState>
+
+
     //Hooks
-    <CustomParentHook></CustomParentHook>
+    // <CustomParentHook></CustomParentHook>
     // <UseRefParent></UseRefParent>
     // <UseMemoParent></UseMemoParent>
     // <UseCallBackParent></UseCallBackParent>
