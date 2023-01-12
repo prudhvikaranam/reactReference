@@ -28,7 +28,8 @@ import UseReducer from './reactRendering/UseReducer/UseReducer';
 function App() {
   return (
     // React Render
-    <UseReducer></UseReducer>
+    <UseReducer />
+
     // <UseState></UseState>
 
 
