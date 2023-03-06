@@ -24,12 +24,13 @@ import UseRefParent from './HOOKS/useRef/UseRefParent';
 import CustomParentHook from './HOOKS/customHooks/CustomParentHook';
 import UseState from './reactRendering/UseState/UseState';
 import UseReducer from './reactRendering/UseReducer/UseReducer';
+import UseStateObject from './reactRendering/UseState/UseStateObject';
 
 function App() {
   return (
     // React Render
-    <UseReducer />
-
+    <UseStateObject></UseStateObject>
+    // <UseReducer />
     // <UseState></UseState>
 
 
