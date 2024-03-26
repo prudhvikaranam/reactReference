@@ -29,7 +29,7 @@ import UseStateObject from './reactRendering/UseState/UseStateObject';
 function App() {
   return (
     // React Render
-    <UseStateObject></UseStateObject>
+    // <UseStateObject></UseStateObject>
     // <UseReducer />
     // <UseState></UseState>
 
@@ -39,7 +39,7 @@ function App() {
     // <UseRefParent></UseRefParent>
     // <UseMemoParent></UseMemoParent>
     // <UseCallBackParent></UseCallBackParent>
-    // <ParentReducer></ParentReducer>
+    <ParentReducer></ParentReducer>
     // <ParentContextFucntional></ParentContextFucntional>
     // <ParentuseEffects></ParentuseEffects>
     // <ParentStateFunctional></ParentStateFunctional>

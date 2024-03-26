@@ -13,7 +13,7 @@ function ParentComp() {
         <div>
             <h1>PROPS</h1>
             Parent Functional Component<br />
-            {/* <button onClick={changeValue}>Click to change value</button><br /> */}
+            <button onClick={changeValue}>Click to change value</button><br />
             {value}
             <br />
             <h2 className='info'>
