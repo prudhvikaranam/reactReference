@@ -12,9 +12,9 @@ const div = React.createElement('div', { id: 'parent' }, [
             React.createElement('h2', { id: 'h1react' }, 'Hey Im h2B created with React')
         ])
     ],
-])
+]);
 
 
-const head = React.createElement('h1', { id: 'h1react' }, 'Hey Im h1 created with React')
+const head = React.createElement('h1', { id: 'h1react' }, 'Hey Im h1 created with React');
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render([div,head]);
+root.render([div, head]);
