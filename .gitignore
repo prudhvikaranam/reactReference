@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.parcel-cache
+dist
+node_modules
 # testing
 /coverage
 
