@@ -1,0 +1,31 @@
+----> Component Composition
+----> Reconcilation algorithm (or) React Fiber/ Diff algorithm
+
+
+
+
+----> USESTATE
+useState will help to re-render the component 
+
+when there is a change in the useState variable React idetifies that changes and re-renders that component.
+
+Whereas React will not identify when there is a change in the normal varilable, hence even though normal variable value gets changed logically it will not get updated in the DOM.
+
+
+----> USEEFFECT
+
+useEffect will get triggered after component is rendered
+
+useEffect(() => {
+  //Runs on every render
+});
+
+useEffect(() => {
+  //Runs only on the first render
+}, []);
+
+
+useEffect(() => {
+  //Runs on the first render
+  //And any time any dependency value changes
+}, [prop, state]); 

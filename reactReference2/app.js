@@ -6,14 +6,14 @@ const div = React.createElement('div', { id: 'parent' }, [
     [
 
         React.createElement('div', { id: 'childA' }, [
-            React.createElement('h2', { id: 'h1react' }, 'Hey Im Nsted h1A created with React'),
-            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nsted h2A created with React')
+            React.createElement('h2', { id: 'h1react' }, 'Hey Im Nested h1A created with React'),
+            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nested h2A created with React')
         ])
     ],
     [
         React.createElement('div', { id: 'childB' }, [
-            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nsted h1B created with React'),
-            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nsted h2B created with React')
+            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nested h1B created with React'),
+            React.createElement('h2', { id: 'h1react' }, 'Hey Im  Nested h2B created with React')
         ])
     ],
 ]);
