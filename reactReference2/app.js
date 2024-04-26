@@ -24,7 +24,7 @@ const head = React.createElement('h1', { id: 'h1react' }, 'Hey Im h1 created wit
 // ----------------JSX way of code starts here-------------
 const jsxHead = <h1>Hello, I'm an head coming from JSX format</h1> 
 
-// JSX => Babel Transpiles it to React.createElement (ReactElement) => ReactElement - JS Object =>  HTMLElement(render)
+// JSX => Babel Transpiles it to React.createElement (ReactElement) =>  JS Object =>  HTMLElement(render)
 
 //Point 1:::: Although this looks like a tag but this is also an Object internally, Usually this type of syntax <h1> tagss will not work if we start application normally, If we want to run this type of code we need some kind of the transpilers, In this application case, we have installed parcel which will internally use babel (transpiler) hence we run the applicaion using parcel (npx parcel index.html) it will work...
 

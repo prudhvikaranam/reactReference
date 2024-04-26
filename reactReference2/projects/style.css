@@ -1,0 +1,36 @@
+h1 {
+    color: orangered;
+}
+
+
+h3 {
+    color: orangered;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list {
+    justify-content: space-around;
+    display: flex;
+    width: 45%;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.resCardContainer {
+    width: 20%;
+    height: 500px;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 10px 0px;
+}
