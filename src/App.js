@@ -39,10 +39,10 @@ function App() {
     // <UseRefParent></UseRefParent>
     // <UseMemoParent></UseMemoParent>
     // <UseCallBackParent></UseCallBackParent>
-    <ParentReducer></ParentReducer>
+    // <ParentReducer></ParentReducer>
     // <ParentContextFucntional></ParentContextFucntional>
     // <ParentuseEffects></ParentuseEffects>
-    // <ParentStateFunctional></ParentStateFunctional>
+    <ParentStateFunctional></ParentStateFunctional>
 
     // Context
     // <ParentContextComponent></ParentContextComponent>

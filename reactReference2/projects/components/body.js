@@ -6,7 +6,6 @@ const Body = () => {
         fetchData();
     }, [])
 
-    console.log('Body');
     const fetchData = async () => {
         const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.37240&lng=78.43780&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
         const json = await data.json();
@@ -15,7 +14,7 @@ const Body = () => {
 
     return (
         <>
-            <h3>Below are available i your area...  </h3>
+            <h3>Below are available in your area...  </h3>
             {resList ?
                 <div id="cardsContainer" className="cardsContainer">
                     {resList.map((data, i) => {

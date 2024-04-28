@@ -20,9 +20,10 @@ function ParentStateFunctional() {
 
 
     const changeNameMethod = () => {
-        changeNameState(() => {
-            return 'Prudhvi Teja Karanam'
-        })
+        // changeNameState(() => {
+        //     return 'Prudhvi Teja Karanam'
+        // })
+        changeNameState('Prudhvi Teja Karanam');
     }
     const changeNameMethodPrev = () => {
         changeNameState((prevValue) => {
