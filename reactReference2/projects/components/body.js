@@ -19,7 +19,7 @@ const Body = () => {
                 <div id="cardsContainer" className="cardsContainer">
                     {resList.map((data, i) => {
                         return <ResCard resList={data} key={i} />
-
+ 
                     })} </div>
                 : <h1>Data still loading</h1>
             }

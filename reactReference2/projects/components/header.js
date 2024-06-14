@@ -1,15 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import '../style.css';
-import Body from './body';
 import {
     Link,
-    Outlet
+    NavLink,
+    Outlet,
 } from "react-router-dom";
-import Contact from './contact';
 const Header = () => {
     const [userLoginStatus, setUserLoginStatus] = useState(false);
 
-    let navList = ['Home', 'Offers', 'Contact', 'Cart'];
+    let navList = ['Home', 'Offers', 'Contact', 'Cart', 'Groceries'];
+
+    const makeNavLinkActive = (props) => {
+        return props.isActive && 'active-link'
+    }   
 
     return (
         <>
@@ -18,7 +21,9 @@ const Header = () => {
                 <div className='list'>
                     {navList.map((element, i) => {
                         return <span className='list' key={i}>
-                            <Link to={element === 'Home' ? '/' : '/' + element}>{element}</Link>
+                            <NavLink to={element === 'Home' ? '/' : '/' + element} className={makeNavLinkActive}>
+                                {element}
+                            </NavLink>
                         </span>
                     })}
                 </div>
@@ -27,6 +32,7 @@ const Header = () => {
                 }}>{userLoginStatus ? 'Log Out' : 'Login'}</div>
             </div>
             <hr />
+
             <Outlet />
         </>
     )

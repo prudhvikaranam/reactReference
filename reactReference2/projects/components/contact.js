@@ -1,16 +1,16 @@
-import ContactForm from "./contactForm";
 import {
-    createBrowserRouter,
-    RouterProvider,
-    Outlet,
-    Link
+    Link, Outlet, NavLink
 } from "react-router-dom";
 const Contact = () => {
+
+    const highLightIfActive = (props) => {
+        return props.isActive && 'active-link'
+    }
     return (
         <>
             <h2>This is a Contact page</h2>
             <div>
-                <Link to={'/' + 'Contact/form'}>Show Contact form</Link>
+                <NavLink to={'/' + 'Contact/form'} className = {highLightIfActive}>Show Contact form</NavLink>
             </div>
             <Outlet />
         </>
