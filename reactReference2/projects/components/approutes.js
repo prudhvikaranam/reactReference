@@ -31,7 +31,7 @@ const appRouter = createBrowserRouter([
                 element: <Contact />,
                 children: [
                     {
-                        path: '/Contact/form',
+                        path: 'form',
                         element: <ContactForm />,
                     }
                 ]

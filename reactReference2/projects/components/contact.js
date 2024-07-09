@@ -10,7 +10,7 @@ const Contact = () => {
         <>
             <h2>This is a Contact page</h2>
             <div>
-                <NavLink to={'/' + 'Contact/form'} className = {highLightIfActive}>Show Contact form</NavLink>
+                <NavLink to={'form'} className = {highLightIfActive}>Show Contact form</NavLink>
             </div>
             <Outlet />
         </>
