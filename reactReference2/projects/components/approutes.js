@@ -52,15 +52,6 @@ const appRouter = createBrowserRouter([
             // This way we can get the error in the console or will help to redirection or etc....
         ],
     },
-   
-    {
-        path: '/Contact',
-        element: <Contact />
-    },
-    {
-        path: '/Cart',
-        element: <Cart />
-    },
     {
         path: 'Groceries',
         element: (<Suspense fallback={<h2>Groceries Page is getting loaded...</h2>}><Groceries /></Suspense>)

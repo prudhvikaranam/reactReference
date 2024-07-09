@@ -11,7 +11,7 @@ const Header = () => {
     let navList = ['Home', 'Offers', 'Contact', 'Cart', 'Groceries'];
 
     const makeNavLinkActive = (props) => {
-        return props.isActive && 'active-link'
+        return props.isActive && 'active-link';
     }   
 
     return (
