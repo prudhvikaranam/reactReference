@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom";
 const ContactForm = () => {
     const navigate = useNavigate();
 
-    console.log(navigate)
     const goHome = () => {
-        navigate(-1);
+        // navigate(-1);
         // navigate('/Cart');
-        // navigate('/Cart', {replace: true}); // replace will replace the entire previous history..
+        navigate('/Cart', { options: { replace: true } }); // will replace the entire previous history..
 
     }
     return (

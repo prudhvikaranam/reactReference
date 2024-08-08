@@ -1,39 +1,44 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import '../style.css';
 import {
     Link,
     NavLink,
     Outlet,
 } from "react-router-dom";
+import { userContext } from './userContext';
+import UserLoggedName from './showuserNameComponent';
 const Header = () => {
-    const [userLoginStatus, setUserLoginStatus] = useState(false);
+    const [userLoginStatus, setUserLoginStatus] = useState(true);
+    const [userName, setUserName] = useState('');
 
     let navList = ['Home', 'Offers', 'Contact', 'Cart', 'Groceries'];
-
     const makeNavLinkActive = (props) => {
         return props.isActive && 'active-link';
-    }   
-
+    }
+    const changeLoggedInUser = (e) => {
+        setUserName(e)
+    }
     return (
         <>
-            <div className="header">
-                <div><h1>Foddies</h1></div>
-                <div className='list'>
-                    {navList.map((element, i) => {
-                        return <span className='list' key={i}>
-                            <NavLink to={element === 'Home' ? '/' : '/' + element} className={makeNavLinkActive}>
-                                {element}
-                            </NavLink>
-                        </span>
-                    })}
-                </div>
-                <div onClick={() => {
-                    setUserLoginStatus(!userLoginStatus)
-                }}>{userLoginStatus ? 'Log Out' : 'Login'}</div>
-            </div>
-            <hr />
 
-            <Outlet />
+            <userContext.Provider value={{ loggedInUser: userName, changeLoggedInUser }}>
+                <div className="header">
+                    <div><h1>Foddies</h1></div>
+                    <div className='list'>
+                        {navList.map((element, i) => {
+                            return <span className='list' key={i}>
+                                <NavLink to={element === 'Home' ? '/' : '/' + element} className={makeNavLinkActive}>
+                                    {element}
+                                </NavLink>
+                            </span>
+                        })}
+                    </div>
+                    <UserLoggedName userLoginStatus = {userLoginStatus} setUserLoginStatus = {setUserLoginStatus}></UserLoggedName>
+                </div>
+                <hr />
+
+                <Outlet />
+            </userContext.Provider>
         </>
     )
 }

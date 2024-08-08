@@ -1,0 +1,735 @@
+export let staticRestaurants = [
+        {
+            "info": {
+                "id": "312149",
+                "name": "Wow! Momo",
+                "cloudinaryImageId": "64fd45fd9f44c1737bc446e470bed666",
+                "locality": "Banjara Hills",
+                "areaName": "Banjara Hills",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                    "Tibetan",
+                    "Healthy Food",
+                    "Asian",
+                    "Chinese",
+                    "Snacks",
+                    "Continental",
+                    "Desserts",
+                    "Beverages"
+                ],
+                "avgRating": 4.2,
+                "parentId": "1776",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "1K+",
+                "sla": {
+                    "deliveryTime": 68,
+                    "lastMileTravel": 6.4,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "65-70 mins",
+                    "lastMileTravelString": "6.4 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-25 23:00:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "Rxawards/_CATEGORY-Chinese.png",
+                            "description": "Delivery!"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "Delivery!",
+                                        "imageId": "Rxawards/_CATEGORY-Chinese.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "ITEMS",
+                    "subHeader": "AT ₹99"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "3.8",
+                        "ratingCount": "50+"
+                    },
+                    "source": "GOOGLE",
+                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/wow-momo-banjara-hills-hyderabad-312149",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+            "promoted": true
+        },
+        {
+            "info": {
+                "id": "659667",
+                "name": "Barbeque Nation",
+                "cloudinaryImageId": "8b3a3993448aeba5ee8e6f63be94bb60",
+                "locality": "COMMERCIAL CENTRE",
+                "areaName": "Attapur",
+                "costForTwo": "₹600 for two",
+                "cuisines": [
+                    "North Indian",
+                    "Barbecue",
+                    "Biryani",
+                    "Kebabs",
+                    "Mughlai",
+                    "Desserts"
+                ],
+                "avgRating": 3.7,
+                "parentId": "2438",
+                "avgRatingString": "3.7",
+                "totalRatingsString": "100+",
+                "sla": {
+                    "deliveryTime": 54,
+                    "lastMileTravel": 4.3,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "50-55 mins",
+                    "lastMileTravelString": "4.3 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-25 23:30:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "ITEMS",
+                    "subHeader": "AT ₹199"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/barbeque-nation-commercial-centre-attapur-hyderabad-659667",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            "info": {
+                "id": "750389",
+                "name": "Daily Kitchen - Homely Meals",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/741d7d41-1341-4358-b6e0-cc22b8e82f9a_750389.JPG",
+                "locality": "GUMMA KONDA COLONY",
+                "areaName": "Attapur",
+                "costForTwo": "₹400 for two",
+                "cuisines": [
+                    "Home Food",
+                    "Indian",
+                    "North Indian",
+                    "Thalis"
+                ],
+                "avgRating": 4.1,
+                "parentId": "444382",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "100+",
+                "sla": {
+                    "deliveryTime": 30,
+                    "lastMileTravel": 2.2,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "20-30 mins",
+                    "lastMileTravelString": "2.2 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-26 02:00:00",
+                    "opened": true
+                },
+                "badges": {
+                    "textExtendedBadges": [
+                        {
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available",
+                            "fontColor": "#7E808C"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "",
+                                        "fontColor": "#7E808C",
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "ITEMS",
+                    "subHeader": "AT ₹139"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/daily-kitchen-homely-meals-gumma-konda-colony-attapur-hyderabad-750389",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            "info": {
+                "id": "622195",
+                "name": "MOJO Pizza - 2X Toppings",
+                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/6/24/295f1bfc-237b-4bd4-832b-a23fdf08f8aa_622195.JPG",
+                "locality": "Gumma Konda Colony",
+                "areaName": "Attapur",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                    "Pizzas",
+                    "Italian",
+                    "Fast Food",
+                    "Desserts"
+                ],
+                "avgRating": 4.3,
+                "parentId": "11329",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "500+",
+                "sla": {
+                    "deliveryTime": 35,
+                    "lastMileTravel": 2.2,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "25-35 mins",
+                    "lastMileTravelString": "2.2 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-26 02:00:00",
+                    "opened": true
+                },
+                "badges": {
+                    "textExtendedBadges": [
+                        {
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available",
+                            "fontColor": "#7E808C"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "",
+                                        "fontColor": "#7E808C",
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "ITEMS",
+                    "subHeader": "AT ₹179"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/mojo-pizza-2x-toppings-gumma-konda-colony-attapur-hyderabad-622195",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+            "promoted" : true 
+        },
+        {
+            "info": {
+                "id": "28108",
+                "name": "Al Rabea Al Arabi Cafeteria",
+                "cloudinaryImageId": "jnzmscxd37rbjmgciwt5",
+                "locality": "Mehdipatnam",
+                "areaName": "Mehdipatnam",
+                "costForTwo": "₹250 for two",
+                "cuisines": [
+                    "Arabian",
+                    "Lebanese"
+                ],
+                "avgRating": 4.4,
+                "parentId": "7582",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "10K+",
+                "sla": {
+                    "deliveryTime": 35,
+                    "lastMileTravel": 3,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "35-40 mins",
+                    "lastMileTravelString": "3.0 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-26 01:00:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "4.3",
+                        "ratingCount": "1K+"
+                    },
+                    "source": "GOOGLE",
+                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/al-rabea-al-arabi-cafeteria-mehdipatnam-hyderabad-28108",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
+            "promoted": true
+        },
+        {
+            "info": {
+                "id": "738279",
+                "name": "Mehraab Restaurant",
+                "cloudinaryImageId": "64250274cf06f7be4e44e5626a2aeae3",
+                "locality": "Rajendra nagar",
+                "areaName": "Attapur",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                    "Indian",
+                    "Chinese",
+                    "Mughlai"
+                ],
+                "avgRating": 4.4,
+                "parentId": "438394",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "1K+",
+                "sla": {
+                    "deliveryTime": 30,
+                    "lastMileTravel": 5,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "25-30 mins",
+                    "lastMileTravelString": "5.0 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-25 23:59:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "10% OFF",
+                    "subHeader": "UPTO ₹40"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/mehraab-restaurant-rajendra-nagar-attapur-hyderabad-738279",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            "info": {
+                "id": "767374",
+                "name": "Grill Affair",
+                "cloudinaryImageId": "910b43a11f7d0051cba0a680eb73a689",
+                "locality": "Attapur Village Ring Road",
+                "areaName": "Attapur",
+                "costForTwo": "₹249 for two",
+                "cuisines": [
+                    "Grill",
+                    "Arabian",
+                    "Lebanese",
+                    "Burgers"
+                ],
+                "avgRating": 4.1,
+                "parentId": "348652",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "100+",
+                "sla": {
+                    "deliveryTime": 34,
+                    "lastMileTravel": 1.3,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "30-35 mins",
+                    "lastMileTravelString": "1.3 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-25 23:59:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "10% OFF",
+                    "subHeader": "ABOVE ₹900",
+                    "discountTag": "FLAT DEAL"
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/grill-affair-village-ring-road-attapur-hyderabad-767374",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            "info": {
+                "id": "9273",
+                "name": "Sai Kailash Dhaba",
+                "cloudinaryImageId": "msxplzlvic0muhq8enjb",
+                "locality": "Near Sirimalle Garden, Hyderguda, Rajendra Nagar",
+                "areaName": "Attapur",
+                "costForTwo": "₹300 for two",
+                "cuisines": [
+                    "Chinese",
+                    "Biryani",
+                    "Thalis",
+                    "Indian",
+                    "Tandoor"
+                ],
+                "avgRating": 4,
+                "veg": true,
+                "parentId": "19654",
+                "avgRatingString": "4.0",
+                "totalRatingsString": "10K+",
+                "sla": {
+                    "deliveryTime": 30,
+                    "lastMileTravel": 1.1,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "30-35 mins",
+                    "lastMileTravelString": "1.1 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2024-07-25 23:45:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                        }
+                    ],
+                    "textExtendedBadges": [
+                        {
+                            "iconId": "guiltfree/GF_Logo_android_3x",
+                            "shortDescription": "options available",
+                            "fontColor": "#7E808C"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "pureveg",
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "",
+                                        "fontColor": "#7E808C",
+                                        "iconId": "guiltfree/GF_Logo_android_3x",
+                                        "shortDescription": "options available"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "40% OFF",
+                    "subHeader": "UPTO ₹75",
+                    "discountCalloutInfo": {
+                        "message": "Free Delivery",
+                        "logoCtx": {
+                            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+                        }
+                    }
+                },
+                "orderabilityCommunication": {
+                    "title": {},
+                    "subTitle": {},
+                    "message": {},
+                    "customIcon": {}
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "4.0",
+                        "ratingCount": "1K+"
+                    },
+                    "source": "GOOGLE",
+                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-c9566cf3-8b87-4c96-a7ee-8e599a19b4ca"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/restaurants/sai-kailash-dhaba-near-sirimalle-garden-hyderguda-rajendra-nagar-attapur-hyderabad-9273",
+                "text": "RESTAURANT_MENU",
+                "type": "WEBLINK"
+            },
+            "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        }
+    ]

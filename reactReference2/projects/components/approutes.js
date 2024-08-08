@@ -3,7 +3,6 @@ import {
     RouterProvider,
     errorElement
 } from "react-router-dom";
-import Header from "./Header";
 import Contact from "./contact";
 import Cart from "./cart";
 import Body from "./body";
@@ -11,6 +10,7 @@ import ContactForm from "./contactForm";
 import Error from "./error";
 import RestaurentDetail from "./restaurentDetail";
 import { Suspense, lazy } from "react";
+import Header from "./Header";
 
 
 const Groceries = lazy(() => import('./Groceries'));
