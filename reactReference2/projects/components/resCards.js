@@ -17,8 +17,13 @@ const ResCard = (props) => {
         <>
 
             <div id="resCardContainer" className="resCardContainer">
+
+
+                {/* Below code is for testing the HOC functionalities starts here*/}
                 {/* <h6>Counter : {counter} </h6>
                 <button onClick={increaseCounter}>Increase counter</button> */}
+                {/* Below code is for testing the HOC functionalities ends here*/}
+
                 <img src={imgPrefix + cloudinaryImageId} style={imgStyle} />
                 <h4>Hotel Name : {name}</h4>
                 <h5>Cost : {costForTwo} </h5>
