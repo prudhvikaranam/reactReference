@@ -17,8 +17,8 @@ const ResCard = (props) => {
         <>
 
             <div id="resCardContainer" className="resCardContainer">
-                <h6>Counter : {counter} </h6>
-                <button onClick={increaseCounter}>Increase counter</button>
+                {/* <h6>Counter : {counter} </h6>
+                <button onClick={increaseCounter}>Increase counter</button> */}
                 <img src={imgPrefix + cloudinaryImageId} style={imgStyle} />
                 <h4>Hotel Name : {name}</h4>
                 <h5>Cost : {costForTwo} </h5>

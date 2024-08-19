@@ -8,10 +8,10 @@ export const withRestCard = (OriginalComponent) => {
         return (
             <div className="promotedContainer" id="promotedContainer">
                 <h8 className={props.promoted === 'yes' ? 'promoted' : 'non-promoted'}>{props.promoted === 'yes' ? 'Promoted' : 'Non-Promoted'}</h8>
-                <b>User  :{loggedInUser} </b>is from context...
+                {/* <b>User  :{loggedInUser} </b>is from context...
                 <input type="text" onChange={(e) => {
                     changeLoggedInUser(e.target.value);
-                }} value={loggedInUser} autoFocus />
+                }} value={loggedInUser} autoFocus /> */}
                 <OriginalComponent {...props} />
             </div>
 
