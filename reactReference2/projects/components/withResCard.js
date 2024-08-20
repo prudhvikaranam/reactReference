@@ -7,7 +7,7 @@ export const withRestCard = (OriginalComponent) => {
     return (props) => {
         return (
             <div className="promotedContainer" id="promotedContainer">
-                <h8 className={props.promoted === 'yes' ? 'promoted' : 'non-promoted'}>{props.promoted === 'yes' ? 'Promoted' : 'Non-Promoted'}</h8>
+                <div className={props.promoted === 'yes' ? 'promoted h8' : 'non-promoted h8'}>{props.promoted === 'yes' ? 'Promoted' : 'Non-Promoted'}</div>
 
                 {/* Below code is for testing the context functionalities starts here*/}
                 {/* <b>User  :{loggedInUser} </b>is from context...

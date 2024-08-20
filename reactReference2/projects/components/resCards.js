@@ -1,4 +1,6 @@
 import react, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addItem, deleteItem } from "./rtk-redux-utils/cartSlice";
 
 const imgStyle = {
     width: '100%',
@@ -13,6 +15,21 @@ const ResCard = (props) => {
     const increaseCounter = () => {
         setCounter(counter + 1);
     }
+    const dispatchItem = useDispatch()
+
+
+    const addItems = () => {
+        dispatchItem(addItem("Pizza"));
+
+        //Here Pizza is added as {payload : Pizza}
+    }
+
+
+    const removeItems = () => {
+        dispatchItem(deleteItem("Pizza"));
+    }
+
+
     return (
         <>
 
@@ -28,6 +45,9 @@ const ResCard = (props) => {
                 <h4>Hotel Name : {name}</h4>
                 <h5>Cost : {costForTwo} </h5>
                 <h6>Rating : {avgRating} </h6>
+                <button onClick={addItems}>Add Item</button>
+                <button onClick={removeItems}>Remove Item</button>
+
             </div>
 
         </>

@@ -4,7 +4,7 @@ import {
 const Contact = () => {
 
     const highLightIfActive = (props) => {
-        return props.isActive && 'active-link'
+        return props.isActive ? 'active-link' : ''
     }
     return (
         <>

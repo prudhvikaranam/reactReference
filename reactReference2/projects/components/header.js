@@ -7,13 +7,15 @@ import {
 } from "react-router-dom";
 import { userContext } from './userContext';
 import UserLoggedName from './showuserNameComponent';
+import { Provider } from 'react-redux';
+import appStore from './rtk-redux-utils/appstore';
 const Header = () => {
     const [userLoginStatus, setUserLoginStatus] = useState(true);
-    const [userName, setUserName] = useState('');
+    const [userName, setUserName] = useState('John Doe');
 
     let navList = ['Home', 'Offers', 'Contact', 'Cart', 'Groceries'];
     const makeNavLinkActive = (props) => {
-        return props.isActive && 'active-link';
+        return props.isActive ? 'active-link' : '';
     }
     const changeLoggedInUser = (e) => {
         setUserName(e)
@@ -21,6 +23,7 @@ const Header = () => {
     return (
         <>
 
+            <Provider store = {appStore}>
             <userContext.Provider value={{ loggedInUser: userName, changeLoggedInUser }}>
                 <div className="header">
                     <div><h1>Foddies</h1></div>
@@ -39,6 +42,7 @@ const Header = () => {
 
                 <Outlet />
             </userContext.Provider>
+            </Provider>
         </>
     )
 }
