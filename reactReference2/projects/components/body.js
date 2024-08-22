@@ -11,10 +11,11 @@ const Body = () => {
     const ResCardWithPromoted = withRestCard(ResCard);
 
     const fetchData = async () => {
-        // const data = await fetch('https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.37240&lng=78.43780&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING');
+        const resData = await fetch('http://127.0.0.4:3000/getRestaurents'),
+        data = await resData.json()
         // const json = await data.json();
         // setResList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-        setResList(staticRestaurants)
+        setResList(data)
     }
 
     return (
