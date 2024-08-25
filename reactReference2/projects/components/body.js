@@ -1,22 +1,27 @@
 import { useEffect, useState } from "react";
 import ResCard from './resCards';
-import {staticRestaurants} from './data'
+import { staticRestaurants } from './data'
 import { withRestCard } from "./withResCard";
+import { useFetchRestaurentsQuery } from "./rtk-redux-utils/apistore";
 const Body = () => {
-    const [resList, setResList] = useState('');
-    useEffect(() => {
-        fetchData();
-    }, [])
+    // const [resList, setResList] = useState('');
+    // useEffect(() => {
+    //     fetchData();
+    // }, [])
 
+    // ---------Normal way of fetch data async and await
+    // const fetchData = async () => {
+    // const resData = await fetch('http://127.0.0.4:3000/getRestaurents'),
+    // data = await resData.json()
+    // const json = await data.json();
+    // setResList(json.data.cards[ 4].card.card.gridElements.infoWithStyle.restaurants);
+    // setResList(data)
+    // }
+
+    // Using RTK Query
     const ResCardWithPromoted = withRestCard(ResCard);
-
-    const fetchData = async () => {
-        const resData = await fetch('http://127.0.0.4:3000/getRestaurents'),
-        data = await resData.json()
-        // const json = await data.json();
-        // setResList(json.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
-        setResList(data)
-    }
+    const { data : resList } = useFetchRestaurentsQuery()
+    
 
     return (
         <>
@@ -25,13 +30,13 @@ const Body = () => {
                 <div id="cardsContainer" className="cardsContainer">
                     {resList.map((data, i) => {
                         // return <ResCard resList={data} key={i} />
-                        
+
                         // return data.promoted ? <ResCardWithPromoted resList={data} key={i} /> : <ResCard resList={data} key={i} /> 
 
-                        return data.promoted ? <ResCardWithPromoted resList={data} key={i}  promoted = {"yes"}/> : <ResCardWithPromoted resList={data} key={i}  promoted = {"no"}/>
+                        return data.promoted ? <ResCardWithPromoted resList={data} key={i} promoted={"yes"} /> : <ResCardWithPromoted resList={data} key={i} promoted={"no"} />
 
 
- 
+
                     })} </div>
                 : <h1>Data still loading</h1>
             }
