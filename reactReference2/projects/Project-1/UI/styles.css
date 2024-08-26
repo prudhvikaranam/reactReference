@@ -1,0 +1,35 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.root {
+    font-family: cursive;
+}
+
+.header-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+}
+
+
+.header-main-container div {
+    padding: 0px 10px;
+
+}
+
+.logo-container h1 {
+    color: red;
+}
+
+.navigation-container {
+    display: flex;
+    flex: 0.7;
+    justify-content: space-evenly;
+}
+
+.navigation-container a {
+    text-decoration: none;
+}
