@@ -33,9 +33,9 @@ const Body = () => {
   return (
     <>
       <div className="restro-items-container" id="restro-items-container">
-        {data.map((data) => {
+        {data.map((data,i) => {
           return (
-            <div className="restro-item" id="restro-item">
+            <div className="restro-item" id="restro-item" key={i}>
               <img src={data.image} />
               <h3 className="restro-header">{data.hotelname}</h3>
               <div className="restro-details">
