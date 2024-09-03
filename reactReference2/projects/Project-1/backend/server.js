@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
+var cors = require('cors')
 
 
 app.use(express.json());
+app.use(cors());
 
 app.get('/getRestros', (req, res) => {
     fs.readFile(`./data.js`, 'utf-8', (err, data) => {
@@ -11,7 +13,7 @@ app.get('/getRestros', (req, res) => {
     })
 })
 
-app.post('/postMethod', (req, res) => {
+app.post('/postRestro', (req, res) => {
 
     fs.readFile('./data.js', 'utf-8', (err, data) => {
         const availableRestros = JSON.parse(data);
