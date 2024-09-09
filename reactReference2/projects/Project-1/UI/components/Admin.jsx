@@ -1,8 +1,10 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useGetRestrosQuery,useAddRestrosMutation } from "../rtk-store/apiQuery";
 
 const Admin = () => {
+  const { data } = useGetRestrosQuery();
   const [addDataState, setAddDataState] = useState({
     hotelname: "",
     approxcost: "",
@@ -21,16 +23,14 @@ const Admin = () => {
     });
   };
 
+  const [addRestros] = useAddRestrosMutation();
   const submitRestro = () => {
-    const postData = axios.post(
-      "http://127.0.0.2:8080/postRestro",
-      addDataState
-    );
-    console.log("postData", postData);
+    addRestros(addDataState)
   };
 
   return (
     <>
+      <h1>Total number of Restros are :: {data?.length}</h1>
       <div
         className="admin-container center-body-container"
         id="admin-container center-body-container"

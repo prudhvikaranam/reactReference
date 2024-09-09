@@ -1,26 +1,26 @@
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
-
+import { useGetRestrosQuery } from "../rtk-store/apiQuery";
 const Body = () => {
   const [restros, setRestros] = useState();
 
-  const fetchRestros = async () => {
-    const res = await axios.get("http://127.0.0.2:8080/getRestros");
-    setRestros(res.data);
+  const { data, isFetching, isError, isLoading, refetch } =
+    useGetRestrosQuery();
+
+  console.log("Body component loaded");
+
+  const refreshData = () => {
+    refetch();
   };
-
-  useEffect(() => {
-    fetchRestros();
-  }, []);
-
   return (
     <>
+      <button onClick={refreshData}>Refresh</button>
       <div className="restro-items-container" id="restro-items-container">
-        {!restros ? (
+        {!data ? (
           <h1>Loading</h1>
         ) : (
-          restros.map((data, i) => {
+          data.map((data, i) => {
             return (
               <div className="restro-item" id="restro-item" key={i}>
                 <img src={data.image} />
