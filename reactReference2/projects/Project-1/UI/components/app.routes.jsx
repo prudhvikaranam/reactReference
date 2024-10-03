@@ -5,6 +5,11 @@ import Locations from "./Locations";
 import Offers from "./Offers";
 import Login from "./Login";
 import Admin from "./Admin";
+import Cart from "./Cart";
+import appStore from "../rtk-store/store";
+import { Provider } from "react-redux";
+import { ApiProvider } from "@reduxjs/toolkit/query/react";
+import { restrosApi } from "../rtk-store/apiQuery";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -33,10 +38,22 @@ const routes = createBrowserRouter([
       {
         path: "/Admin",
         element: <Admin />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
       }
     ]
   }
 ]);
 
-const RouteProvider = <RouterProvider router={routes} />;
+const RouteProvider = (
+  <ApiProvider api={restrosApi}>
+    <Provider store={appStore}>
+      <RouterProvider router={routes} />
+    </Provider>
+    ;
+  </ApiProvider>
+);
+
 export default RouteProvider;

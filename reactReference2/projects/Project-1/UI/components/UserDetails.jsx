@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import user from "../reactContext/userContext";
 
 const UserDetails = () => {
@@ -9,9 +9,18 @@ const UserDetails = () => {
     changeName(value);
   };
 
+  const [userLoggedIn, setUserLoggedIn] = useState(false);
+
+  const userStatus = (status) => {
+    setUserLoggedIn(!status);
+  };
+
   return (
     <>
       <div className="user-container" id="user-container">
+        <button className="login-btn" onClick={() => userStatus(userLoggedIn)}>
+          {userLoggedIn ? "Log Out" : "Log In"}
+        </button>
         {enableReactContext && (
           <>
             {userName ? (

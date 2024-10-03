@@ -1,5 +1,6 @@
 const { configureStore } = require("@reduxjs/toolkit");
 import { restrosApi } from "./apiQuery";
+import cartSlice from "./cartSlice";
 import locationSlice from "./locationSlice";
 import offerSlice from "./offersSlice";
 
@@ -7,9 +8,10 @@ const appStore = configureStore({
   reducer: {
     offers: offerSlice,
     locations: locationSlice,
-    [restrosApi.reducerPath] : restrosApi.reducer
+    cart: cartSlice,
+    [restrosApi.reducerPath]: restrosApi.reducer
   },
-  middleware : (getDefaultMiddleware) => [
+  middleware: (getDefaultMiddleware) => [
     ...getDefaultMiddleware(),
     restrosApi.middleware
   ]

@@ -1,7 +1,7 @@
 import { createContext } from "react";
 
 const user = createContext({
-  userName: "John Doe",
+  userName: "",
   changeName: (state, action) => {
     console.log(state.userName);
   }

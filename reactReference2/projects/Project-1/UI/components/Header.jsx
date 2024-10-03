@@ -5,13 +5,18 @@ import { Provider } from "react-redux";
 import appStore from "../rtk-store/store";
 import { ApiProvider } from "@reduxjs/toolkit/query/react";
 import { restrosApi } from "../rtk-store/apiQuery";
+import { useContext, useState } from "react";
+import user from "../reactContext/userContext";
+import Cart from "./Cart";
+import { useSelector } from "react-redux";
+
 const Header = () => {
   const headers = ["Home", "Locations", "Offers", "Admin"];
+  const noOfCarts = useSelector((store) => store.cart);
 
   return (
     <>
-      <ApiProvider api={restrosApi}>
-        <Provider store={appStore}>
+        {/* <Provider store={appStore}> */}
           <userContext.Provider value={{ userName: "Tejas (From Provider)" }}>
             <div id="header-main-container" className="header-main-container">
               <div className="logo-container" id="logo-container">
@@ -26,12 +31,13 @@ const Header = () => {
                   );
                 })}
               </div>
+                <NavLink to={'./cart'}>Cart {noOfCarts}</NavLink>
+
               <UserDetails />
             </div>
             <Outlet />
           </userContext.Provider>
-        </Provider>
-      </ApiProvider>
+        {/* </Provider> */}
     </>
   );
 };
